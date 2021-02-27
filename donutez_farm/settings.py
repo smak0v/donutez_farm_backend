@@ -10,7 +10,7 @@ SECRET_KEY = 'bss35quog8%#y!m+8$4%1wd_7#3)%%tgt9rwp(h=mp4qk)eft('
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['136.244.96.28', ]
 
 # Application definition
 INSTALLED_APPS = [
