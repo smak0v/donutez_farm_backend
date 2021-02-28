@@ -2,7 +2,10 @@
 Django settings for donutez_farm project.
 """
 
+import os
 from pathlib import Path
+
+import django_on_heroku
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -10,7 +13,7 @@ SECRET_KEY = 'bss35quog8%#y!m+8$4%1wd_7#3)%%tgt9rwp(h=mp4qk)eft('
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['136.244.96.28', ]
+ALLOWED_HOSTS = ['*', ]
 
 # Application definition
 INSTALLED_APPS = [
@@ -92,3 +95,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+django_on_heroku.settings(locals())
