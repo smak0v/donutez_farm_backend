@@ -1,1 +1,1 @@
-web: gunicorn donutez_farm.wsgi.application --log-file -
+web: gunicorn donutez_farm.wsgi --log-file -
