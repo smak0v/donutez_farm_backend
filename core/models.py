@@ -36,6 +36,17 @@ class YF(models.Model):
     yf = models.CharField(
         max_length=36,
     )
+    title = models.CharField(
+        max_length=48,
+        blank=True,
+        null=True,
+        default='',
+    )
+    description = models.TextField(
+        blank=True,
+        null=True,
+        default='',
+    )
 
     created_at = models.DateTimeField(
         auto_now_add=True,
